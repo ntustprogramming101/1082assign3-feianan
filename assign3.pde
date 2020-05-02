@@ -317,6 +317,9 @@ void draw() {
 
       image(restartHovered, START_BUTTON_X, START_BUTTON_Y);
       if (mousePressed) {
+        down = false;
+        right = false;
+        left = false;
         gameState = GAME_RUN;
         mousePressed = false;
         playerHealth = PLAYERHEALTH_T;
